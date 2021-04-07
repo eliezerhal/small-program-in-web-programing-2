@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <title>internet programing ex02</title>
+    <style>
+        .text{
+            text-align: left;
+        }
+        .design {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #b0c4de;
+            height:150px;
+        }
+
+        #home {
+            width:1600px;
+            height:400px;
+        }
+    </style>
+
+    <script src="ex2.js">
+    </script>
+</head>
+
+<body>
+<form>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12" style="text-align: left">
+            <a href="readme.html">link to my readme</a>
+            <div class="design">
+                <h1>Internet Programing - Exercise 2</h1>
+                <p>Please complete this form</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="base" style="display: block">
+        <div class="row">
+            <div class="col-12" style="text-align: left">
+                <div id="error" style="display: none" class="alert alert-warning">
+                    <div >
+                        <h2>Please corect the folowing problems:</h2>
+                        <p id="error0"></p>
+                        <p id="error1"></p>
+                        <p id="error2"></p>
+                        <p id="error3"></p>
+                        <p id="error4"></p>
+                        <p id="error5"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" style="text-align: left">
+                <h2>Personal Information</h2>
+                <div class="form-group">
+                    <label for="massageg0">First Name</label>
+                    <input type="text" class="form-control" id="massageg0">
+                    <label for="massageg1">Last Name</label>
+                    <input type="text" class="form-control" id="massageg1">
+                    <label for="massageg2">Birth Year</label>
+                    <input type="number" class="form-control" id="massageg2">
+                    <label for="massageg3">Immigrition Year</label>
+                    <input type="number" class="form-control" id="massageg3">
+                </div>
+                <button type="button" id = "my_button" class ="btn btn-primary">Send</button>
+            </div>
+
+            <div class="col-md-6" style="text-align: left">
+                <h2>Children</h2>
+                <p>Enter the number of your children and their respective names.</p>
+                <div class="form-group">
+                    <label for="numberOfChildren">Number of Children</label>
+                    <input type="number" class="form-control" id="numberOfChildren">
+                    <div id="container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<div id="data" class="container-fluid" style="display: none">
+    <div class="row">
+        <div class="col-12" style="text-align: left">
+            <h2>Summury of your data:</h2>
+            <div class="alert alert-danger">
+                <p id="data0"></p>
+                <p id="data1"></p>
+                <p id="data2"></p>
+                <p id="data3"></p>
+            </div>
+        </div>
+        <div id="children" class="col-12" style="text-align: left; display: none">
+            <h2>Children:</h2>
+            <div class="alert alert-danger">
+                <p id="child"></p>
+            </div>
+        </div>
+        <div class="alert alert-light">
+            <button type="button" id = "end_button" class ="btn btn-primary">End</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
